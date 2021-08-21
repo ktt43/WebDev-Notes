@@ -1,0 +1,23 @@
+Tags:
+  For More Semantic Meaning. Assitive Technology
+  Header: Introductor Information/Navigation Links. Used in Body
+  Nav: Used in header, for links.
+  H1: Should only be 1
+  main: For main tontent, Should only be one per page. Related to central topic
+  article: Standalone Content. Ask yourself if you removed all surrounding context, would that content still make sense?
+  section: Grouping tematically realted content.
+  Footer: Footer
+  audio: Has Controls(Boolean) Attribute
+    <audio id="meowClip" controls>
+      <source src="https://s3.amazonaws.com/freecodecamp/screen-reader.mp3" type="audio/mpeg">
+    </audio>
+  figure: Wraps a visual representation along with a caption(figcaption)
+    <figure>
+      <img src="roundhouseDestruction.jpeg" alt="Photo of Camper Cat executing a roundhouse kick">
+      <br>
+      <figcaption>
+        Master Camper Cat demonstrates proper form of a roundhouse kick.
+      </figcaption>
+    </figure>
+
+  
