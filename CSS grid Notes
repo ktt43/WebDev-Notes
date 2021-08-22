@@ -4,6 +4,17 @@ grid-template-columns: r1 r2 r3 r4 rN --> number of columns where rN is the rela
 gird-template-rows: r1 r2 r3 r4 rN --> number of rows where rN is the relative units that each column has
 column gets filled first then rows;
 
+We can:
+  grid-template-columns or row: repeat(# of times to repeat, size of each cell) as shortcut;
+  Specify min and max width of each cell  with minmax(min, max); --> useful when reizing scren.
+  Use auto-fill upon creating cells to dynamically insert cells.
+    Ex: 
+     grid-template-columns: repeat(auto-fill, minmax(60px, 1fr));
+        Would auto add columns with min of 60px
+  Use auto-fit: Would expand each cell to fit its width
+        
+        
+        
 fr unit is divided from the remaining columns: after other units are set 
 
 
@@ -11,10 +22,37 @@ For Parent:
 grid-column-gap: adds gap between columns
 grid-row-gap: adds gap between rows
 grid-gap: --> Single param is row and col . otherwise row column 
+justify-items: apply to all cells
+align-items: apply to all cells
 
 For Child:
 grid-column: start /end --> 1/3 --creates 2 columns
 grid-row: start/end
-justify-self: align content within cell stretch(default),start,center,end
+justify-self: align content horizontally(where on the x-axis) within cell stretch(default),start,center,end
+align-self:align content vertically(where on the y-axis) within cell stretch(default),start,center,end
 
+Plascing items into certain cells:
+Parent:                                       
+    grid-template-areas:
+      "header header header"
+      "advert content content"
+      "footer footer footer";
 
+Child:
+Grid-area: footer will expand content along all 3 columns on the bottom row
+
+If no grid-template-areas exist: we Can
+    grid-area: horizontal line to start at / vertical line to start at / horizontal line to end at / vertical line to end at;
+      Ex: .item1 { grid-area: 1/1/2/4; }
+        
+Media Queries:
+  We can define gird-tempalte -areas within for each viewport width:
+    Ex:
+    @media (min-width: 400px){
+     .container{
+       grid-template-areas:
+          "header header"
+          "advert content"
+         "footer footer";
+      }
+    }
