@@ -1,0 +1,20 @@
+grid: 
+
+grid-template-columns: r1 r2 r3 r4 rN --> number of columns where rN is the relative units that each column has
+gird-template-rows: r1 r2 r3 r4 rN --> number of rows where rN is the relative units that each column has
+column gets filled first then rows;
+
+fr unit is divided from the remaining columns: after other units are set 
+
+
+For Parent:
+grid-column-gap: adds gap between columns
+grid-row-gap: adds gap between rows
+grid-gap: --> Single param is row and col . otherwise row column 
+
+For Child:
+grid-column: start /end --> 1/3 --creates 2 columns
+grid-row: start/end
+justify-self: align content within cell stretch(default),start,center,end
+
+
