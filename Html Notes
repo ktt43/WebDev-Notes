@@ -19,5 +19,12 @@ Tags:
         Master Camper Cat demonstrates proper form of a roundhouse kick.
       </figcaption>
     </figure>
+    
+  fieldset: Used inside a form, wraps radio/checkboxes
+  
+  <time datetime="2013-02-13">last Wednesday</time>: Inline For Assitive Devices
+  
+  max-width:100% Image as large as its container it is in.
+  height: auto --> keeps aspect ratio
 
   
