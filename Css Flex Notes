@@ -1,0 +1,8 @@
+Parent: 
+  display:flex;
+  justify-content: position items within the flex-container(parent) along the x-axis 
+  align-items: position items within flex-container(parent) along y-axis
+  flex-direction: determine the direction the items will go
+  
+  Use display:flex when we want to center elements/img/video
+  
