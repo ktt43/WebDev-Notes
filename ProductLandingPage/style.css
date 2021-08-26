@@ -1,0 +1,148 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Righteous&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Sulphur+Point:wght@700&display=swap');
+body {
+  background:url("https://i.imgur.com/GcP71BP.png");
+  background-repeat:no-repeat;
+  background-size: cover;
+}
+
+#nav-bar{  
+  margin-left:auto;
+  font-family:Bebas Neue;
+  font-size:39px;
+  
+}
+
+#nav-bar a{
+  color:darkorange;
+  margin-left:20px;
+}
+
+.flex-container {
+  background: lightcyan;
+  flex-direction: row;
+  display:flex;
+/*   align-items:flex-start; */
+/*   justify-content:flex-start; */
+  background-color:transparent;
+  position: sticky;
+  top:8px;
+}
+
+h1{
+  margin-left:5px;
+  font-size:80px;
+  margin-top:0;
+  margin-bottom:0;
+  align-self: center;
+  font-family:Bebas Neue;
+  color:darkorange;
+  letter-spacing:4px;
+  text-decoration:underline;
+  max-width:100%;
+}
+
+#logo-container>a {
+  display:flex;
+  
+}
+
+[alt="firefox logo"] {
+  width:20%;
+  height:100%;
+}
+
+#video {
+  margin:auto;
+  display:block;
+}
+
+form {
+  font-size:20px;
+  margin:20px;
+  text-align:center;
+}
+
+#features {
+  display:grid;
+  grid-template-columns: repeat(3,1fr);
+/*   justify-items:center; */
+/*   background-color: rgba(0, 0, 0, 0.2);
+  border-radius:15%;
+  border-style:groove;
+  border-color:darkorange; */
+  margin:0 200px;
+  grid-gap:100px;
+}
+
+.grid-item{
+  height:100%;
+  width:100%; 
+  padding-top:0px;
+  
+/*   justify-self: center; */
+}
+
+.grid-item1{
+  height:100%;
+  width:100%; 
+  padding-top:0px;
+
+}
+
+fieldset{
+  background-color: rgba(0, 0, 0, 0.2);
+  border-radius:15%;
+  border-style:groove;
+  border-color:darkorange;
+  margin:0 200px;
+}
+
+legend {
+  margin:auto;
+  font-size:50px;
+  font-family:Sulphur Point;
+  color:#cc941d;
+}
+
+.featurelogo{
+  width:25%;
+  justify-self:center;
+}
+.grid-item1>p,.grid-item>p {
+  font-size:20px;
+  color:#95baf5;
+}
+
+.grid-item-flex{
+  display:flex;
+  flex-direction:column;
+/*   justify-content: center; */
+  align-items: center;
+ 
+}
+
+#contacts li{
+  display:inline;
+}
+
+footer{
+   text-align: center;
+}
+
+
+
+@media (max-width: 1285px){
+ 
+  #features {
+    display:flex;
+    flex-direction: column;
+  }
+  
+ 
+
+
+
+  
+}
