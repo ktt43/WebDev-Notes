@@ -27,4 +27,7 @@ Tags:
   max-width:100% Image as large as its container it is in.
   height: auto --> keeps aspect ratio
 
-  
+  Parent: flex
+  Child: margin: auto --> Cennters;
+               left --> pushes to right
+               top--> pushes to bottom
