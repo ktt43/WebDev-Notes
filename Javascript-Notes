@@ -1,0 +1,15 @@
+Backticks embed the expression inside ${...} into the string.
+
+DataTypes:  Number(±(253-1))
+            BigInt(// the "n" at the end means it's a BigInt   ;  const bigInt = 1234567890123456789012345678901234567890n;)
+            String(No Character Type)
+            Boolean
+            null: reference to a nonexisting object,nothing,empty,or unknown
+            undefined: value not assigned
+            Object
+            symbol
+    We can:
+      find the dataType of X:
+        typeof(x);
+        typeof x
+            
