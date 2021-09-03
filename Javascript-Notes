@@ -12,4 +12,32 @@ DataTypes:  Number(±(253-1))
       find the dataType of X:
         typeof(x);
         typeof x
-            
+
+If function call is missing parameter, parameter will be set to undefined. --> NO COMPILE ERROR
+
+?? --> means: if undefined or null EX: // if count is undefined or null, show "unknown"
+                                                             alert(count ?? "unknown");
+If a function does not return a value, it is the same as if it returns undefined:
+An empty return is also the same as return undefined:
+            We can: Check if undefined with ===
+
+BuiltIn Functions:
+            min(x,y)
+            pow(x,y)
+
+~~
+function sayHi() {   // (1) create
+  alert( "Hello" );
+}
+
+let func = sayHi;    // (2) the sayHi method now has copied the function into func.
+                        If it was sayHi() --> func would have the result of sayHi
+
+func(); // Hello     // (3) run the copy (it works)!
+sayHi(); // Hello    //     this still works too (why wouldn't it)
+~~
+
+We can also create function like :
+                        let sayHi = function() {
+                          alert( "Hello" );
+                        };
