@@ -17,6 +17,6 @@ Parent:
     transform: translate(-50%,-50%);
 }
 
-Flex-basis: set the width of the element;
-flex-wrap: what to do if the screen can't fit all elements: nowrap->one line , wrap-> multiple lines
+Flex-basis: set the initial width of the element;
+flex-wrap: How to fit all elements: nowrap->one line which may reduce width of elements to make possible, wrap-> multiple lines to keep original width
   
