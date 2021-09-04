@@ -1,0 +1,36 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <script src="myscript.js"></script>
+    <title>Document</title>
+</head>
+<body>
+    
+    <header>
+        <h1 id="gameTitle">Rock Paper Scissors</h1>
+    </header>
+
+    <div id="gameContainer">
+        
+
+        <div id="playerContainer">
+            <h3 id="player">Player Choice:</h3>
+            <div id="choices">
+                <input type="button" id="selectRock" onClick="playerSelection(this.id)" value="Rock">
+                <input type="button" id="selectPaper" onClick="playerSelection(this.id)" value="Paper">
+                <input type="button" id="selectScissors" onClick="playerSelection(this.id)" value="Scissors">
+             </div>
+        </div>
+
+        <div id="resultContainer" class="break">
+            <h2 id="result"></h2>
+        </div>
+    </div>
+
+
+
+</body>
+</html>
