@@ -1,4 +1,7 @@
 //Test Random selection from opponent
+let playerWinCount=0;
+let compWinCount=0;
+
 function computerPlay(){
     //0: Paper, 1: Scissor ,2: Rock
     let result =  Math.floor(Math.random() * 3);
@@ -30,22 +33,53 @@ function numberToSelection(x){
 }
 
 function gameLogic(playerSelection,opponentSelection){
-    console.log(playerSelection + ":" + opponentSelection);
+    // console.log(playerSelection + ":" + opponentSelection);
     let result;
     let playerHand = numberToSelection(playerSelection);
     let compHand = numberToSelection(opponentSelection);
     if(playerSelection == opponentSelection){
         result = "Draw!" + " Player: " + playerHand + " Computer: " + compHand; 
+    
     }  else if(playerSelection == 0 && opponentSelection == 2){
         result = "Player Win!" + " Player: " + playerHand + " Computer: " + compHand;
+        ++playerWinCount;
     } else if(playerSelection == 2 && opponentSelection == 0){
         result = "Computer Win!" + " Player: " + playerHand + " Computer: " + compHand;
-        
+        ++compWinCount;
     }else if(playerSelection>opponentSelection){
         result = "Player Win!" + " Player: " + playerHand + " Computer: " + compHand;
+        ++playerWinCount;
     } else {
         result = "Computer Win!" + " Player: " + playerHand + " Computer: " + compHand;
+        ++compWinCount;
     }
+
+    document.getElementById("playerWins").innerHTML=playerWinCount;
+    document.getElementById("playerLosts").innerHTML=compWinCount;
+    gameWinLogic();
     
+    document.getElementById("result").innerHTML= result;
+}
+
+function gameWinLogic(){
+    if(playerWinCount == 5){
+        ask("You Won! \nPlay Again?",rematch())
+    } else if(compWinCount==5){
+        ask("You Lost! \nRematch?",rematch());
+    }
+}
+
+function ask(question,yes){
+    if(alert(question)){
+        yes()
+    }
+}
+
+function rematch(){
+    playerWinCount=0;
+    compWinCount=0;
+    result="";
+    document.getElementById("playerWins").innerHTML=playerWinCount;
+    document.getElementById("playerLosts").innerHTML=compWinCount;
     document.getElementById("result").innerHTML= result;
 }
