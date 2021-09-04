@@ -56,9 +56,10 @@ function gameLogic(playerSelection,opponentSelection){
 
     document.getElementById("playerWins").innerHTML=playerWinCount;
     document.getElementById("playerLosts").innerHTML=compWinCount;
-    gameWinLogic();
+    
     
     document.getElementById("result").innerHTML= result;
+    gameWinLogic();
 }
 
 function gameWinLogic(){
@@ -78,7 +79,7 @@ function ask(question,yes){
 function rematch(){
     playerWinCount=0;
     compWinCount=0;
-    result="";
+    result=" ";
     document.getElementById("playerWins").innerHTML=playerWinCount;
     document.getElementById("playerLosts").innerHTML=compWinCount;
     document.getElementById("result").innerHTML= result;
