@@ -1,3 +1,6 @@
+body{
+    background: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSoejkmzyHcN4VmssORqOq_3-ccrpjAvf5i-g&usqp=CAU")
+}
 #gameTitle {
     text-align: center;
     text-decoration: underline;
@@ -39,4 +42,29 @@
 #scoreContainer {
     display:flex;
     justify-content: space-evenly;
+}
+
+#selectRock{
+    background-image: url("https://thumbs.dreamstime.com/z/cartoon-rock-pebbles-digital-illustration-147192308.jpg");
+    background-size: contain;
+    width: 100px;
+    height: 100px;
+}
+
+#selectScissors{
+    background-image: url("https://thumbs.dreamstime.com/z/happy-purple-scissor-cartoon-illustration-white-background-made-adobe-photoshop-182257235.jpg");
+    background-size: contain;
+    width: 100px;
+    height: 100px;
+}
+
+#selectPaper{
+    background-image: url("https://as2.ftcdn.net/jpg/01/64/65/59/500_F_164655938_0XiSjB7ZndWxyzIUakJg6q74TYzcBWv2.jpg");
+    background-size: contain;
+    width: 100px;
+    height: 100px;
+}
+
+div>input{
+    margin-right: 20px;
 }
