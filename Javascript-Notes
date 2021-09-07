@@ -64,3 +64,12 @@ To create html element from javascript:
 		
     parentNode.removeChild(child) removes child from parentNode on the DOM and returns reference to child
 	
+
+<!-- the html file -->
+<button id="btn">Click Me Too</button>
+
+// the JavaScript file
+const btn = document.querySelector('#btn');
+btn.addEventListener('click', () => {
+  alert("Hello World");
+});
